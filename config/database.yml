@@ -8,18 +8,11 @@ default: &default
 
 development:
   <<: *default
-  database: yakudou-app_development
+  database: sample-app_development
 
 test:
   <<: *default
-  database: yakudou-app_test
-
-develop:
-  <<: *default
-  database: yakudou_app_develop
-  host: yakudou-app-develop.cluster-ro-cebhcalfl0hj.ap-northeast-1.rds.amazonaws.com
-  username: admin
-  password: qG40rM|M<eH>?bqywFKmFLGo-N9Z
+  database: sample-app_test
 
 production:
   <<: *default
